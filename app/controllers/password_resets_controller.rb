@@ -32,7 +32,7 @@ class PasswordResetsController < ApplicationController
       flash[:success] = "Password has been reset."
       redirect_to @user
     else
-      render 'edit', status: :unproccessable_entity
+      render 'edit', status: :unprocessable_entity
     end
   end
 
